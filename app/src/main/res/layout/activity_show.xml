@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ShowActivity"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="840px"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:src="@drawable/rectangle"
+                    android:layout_marginHorizontal="50dp"
+                    android:layout_marginTop="40dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="사회/현정호"
+                    android:textColor="#ffc107"
+                    android:layout_marginTop="45dp"
+                    android:layout_marginHorizontal="55dp"/>
+            </FrameLayout>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textAlignment="center"
+                android:layout_marginHorizontal="30dp"
+                android:text="올해는 이렇게 보내봐!"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                tools:visibility="visible"
+                android:layout_marginVertical="10dp"/>
+
+        </LinearLayout>
+        <ImageView
+            android:layout_width="1080px"
+            android:layout_height="1080px"
+            android:src="@drawable/card"
+            android:layout_gravity="end"/>
+
+    </FrameLayout>
+</LinearLayout>

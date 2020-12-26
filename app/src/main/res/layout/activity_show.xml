@@ -36,6 +36,7 @@
 
 
             <TextView
+                android:id="@+id/title_txt"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
@@ -48,11 +49,15 @@
                 android:layout_marginVertical="10dp"/>
 
         </LinearLayout>
-        <ImageView
+
+
+        <androidx.viewpager2.widget.ViewPager2
             android:layout_width="1080px"
             android:layout_height="1080px"
-            android:src="@drawable/card"
-            android:layout_gravity="end"/>
+            android:layout_gravity="end"
+            android:layout_weight="1"
+            android:id="@+id/viewPager2"
+            android:orientation="horizontal"/>
 
     </FrameLayout>
 </LinearLayout>
